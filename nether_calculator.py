@@ -19,5 +19,5 @@ x_converted, z_converted = calculate_coordinates(x, z, mode)
 if abs(x_converted) > 30000000 or abs(z_converted) > 30000000:
     st.error("Coordinates exceed world border (±30,000,000)!")
 else:
-    st.write(f"Converted {mode.split()[0]} X Coordinate: {x_converted:.6f}")
-    st.write(f"Converted {mode.split()[0]} Z Coordinate: {z_converted:.6f}")
+    st.write(f"Converted {mode.split()[2]} X Coordinate: {x_converted:.2f}")
+    st.write(f"Converted {mode.split()[2]} Z Coordinate: {z_converted:.2f}")
